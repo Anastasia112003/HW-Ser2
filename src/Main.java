@@ -27,7 +27,6 @@ public class Main {
     }
 
     public static void saveGames(String path, GameProgress game) {
-        // GameProgress gameProgress = null;
         try (FileOutputStream fileOutputStream = new FileOutputStream(path);
              ObjectOutputStream objectOutputStream = new ObjectOutputStream(fileOutputStream)) {
             objectOutputStream.writeObject(game);
